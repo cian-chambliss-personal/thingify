@@ -26,6 +26,8 @@ pinetree = [
 - Pyramid
 - Toroid
 - Cylinder
+- Rope
+- Fabric
 
 # Preposition
 
