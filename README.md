@@ -20,14 +20,14 @@ pinetree = [
 
 - Null (shape) -- the shape is not visible / it is used for arrangoing other items.
 - Sphere
-- # sided Sphere (# of sides - i.e. 4 sided sphere - four sections around )
+- \# sided Sphere (# of sides - i.e. 4 sided sphere - four sections around )
 - Cube
 - Box
 - Cone
-- # sided Cone (# is the number of sides - i.e. 4 sided code is a pyramid)
+- \# sided Cone (# is the number of sides - i.e. 4 sided code is a pyramid)
 - Toroid
 - Cylinder
-- # sided Cylinder (# is the number of sides for the Cylinder - ie. 8 sided Cylinder is an octagonal) 
+- \# sided Cylinder (# is the number of sides for the Cylinder - ie. 8 sided Cylinder is an octagonal) 
 - Rope
 - Fabric
 
