@@ -6,19 +6,24 @@ This language has a base set of primative shapes (nouns), and preposition (above
 
 The language defines 'types' as a name, followed by an '=', followed by a definition enclosed in square brackets '[]'.
 
+The well known Adjectives precede the shape, the preposition that follows the shape relates the shape to the parent.
+The top level 'parent' is a Null.  Child shapes are enclosed in parentheses "()"
+
 # Example
 
 Define a pinetree shape as a green cone atop a brown cylinder
 
 ```
 pinetree = [
-   prickly large green taller by 3 cone above
-   lumpy brown thinner by 2 cylinder
+   prickly large green taller by 3 cone (
+      lumpy brown thinner by 2 cylinder below
+   )
 ]
 chair = [
-  brown shorter by 10 cube 
-  thinner by 10 cube below corners
-  shallower by 10 cube above back edge
+  brown shorter by 10 cube (
+    thinner by 10 cube below corners
+    shallower by 10 cube above back edge
+ )
 ]
 ```
 
@@ -41,19 +46,19 @@ chair = [
 
 If not specified, shapes are assumed to be touching
 
-- Above  (first shape is directly above second shape)
-- Below  (first shape is directly below second shape)
-- Above Corners (repeat second shape abobe at just the top corners)
-- Below Corners (repeat second shape below at just the bottom corners)
-- At Corners (repeat second shape at every corner)
-- At Top Corners (repeat second shape at just the top corners)
-- At Bottom Corners (repeat second shape at just the bottom corners)
+- Above  (child is centered on and 'above' the parentt shape)
+- Below  (chile is center on and 'below' the parentt shape)
+- Above Corners (repeat child above 'top' corners of parent shape)
+- Below Corners (repeat child below 'bottom' corners of parent shape)
+- At Corners (repeat child at every corner)
+- At Top Corners (repeat child at just the top corners)
+- At Bottom Corners (repeat child at just the bottom corners)
 - At Sides (Duplicate along left/right side / mirroring on left).
 - On Edges (Duplicate second shape at center of every edge).
 - On Top Edges (Duplicate second shape at center of just the top edges).
 - On Bottom Edges (Duplicate second shape at center of just the bottom edges).
-- Above Edges (repeat second shape abobe at just the top edges)
-- Below Edges (repeat second shape below at just the bottom edges)
+- Above Edges (repeat child shape above at just the top edges)
+- Below Edges (repeat child shape below at just the bottom edges)
 - Left of (from shapes perspective, second shape is on left)
 - Right of (from shapes perspective, second shape is on right)
 - Behind (first shape is directly behind second shape)
