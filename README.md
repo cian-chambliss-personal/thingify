@@ -15,6 +15,11 @@ pinetree = [
    prickly large green taller by 3 cone above
    lumpy brown thinner by 2 cylinder
 ]
+chair = [
+  brown shorter by 10 cube 
+  thinner by 10 cube below corners
+  shallower by 10 cube above back edge
+]
 ```
 
 # Primatives
