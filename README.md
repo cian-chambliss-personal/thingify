@@ -12,7 +12,8 @@ Define a pinetree shape as a green cone atop a brown cylinder
 
 ```
 pinetree = [
-   cone (large,green) above - cylinder (thinner,brown)
+   prickly large green taller by 3 cone above
+   lumpy brown thinner by 2 cylinder
 ]
 ```
 
@@ -37,6 +38,17 @@ If not specified, shapes are assumed to be touching
 
 - Above  (first shape is directly above second shape)
 - Below  (first shape is directly below second shape)
+- Above Corners (repeat second shape abobe at just the top corners)
+- Below Corners (repeat second shape below at just the bottom corners)
+- At Corners (repeat second shape at every corner)
+- At Top Corners (repeat second shape at just the top corners)
+- At Bottom Corners (repeat second shape at just the bottom corners)
+- At Sides (Duplicate along left/right side / mirroring on left).
+- On Edges (Duplicate second shape at center of every edge).
+- On Top Edges (Duplicate second shape at center of just the top edges).
+- On Bottom Edges (Duplicate second shape at center of just the bottom edges).
+- Above Edges (repeat second shape abobe at just the top edges)
+- Below Edges (repeat second shape below at just the bottom edges)
 - Left of (from shapes perspective, second shape is on left)
 - Right of (from shapes perspective, second shape is on right)
 - Behind (first shape is directly behind second shape)
@@ -109,7 +121,9 @@ Color and texture
 - Fine  (features are closest together * .5)
 - Coarse (features are farther apart * 2)
 - Coarse (features are farther apart * 4)
-- Lumpy (Surface texture has lumps)
+- Bumps (Surface texture has bumps)
+- Divoted (Surface texture has divots)
+- Lumpy (Surface texture has lumps - i.e. divots and bumps)
 - Vertical Bars (bars up & down)
 - Horizontal Bars (bars across)
 - Vertical Rings
