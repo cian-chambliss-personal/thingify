@@ -18,14 +18,16 @@ pinetree = [
 
 # Primatives
 
-- Null (placeholder)
+- Null (shape) -- the shape is not visible / it is used for arrangoing other items.
 - Sphere
+- # sided Sphere (# of sides - i.e. 4 sided sphere - four sections around )
 - Cube
 - Box
 - Cone
-- Pyramid
+- # sided Cone (# is the number of sides - i.e. 4 sided code is a pyramid)
 - Toroid
 - Cylinder
+- # sided Cylinder (# is the number of sides for the Cylinder - ie. 8 sided Cylinder is an octagonal) 
 - Rope
 - Fabric
 
@@ -41,6 +43,8 @@ If not specified, shapes are assumed to be touching
 - [in] front [of] (first shape is directly in front of second shape )
 - Around (first shape is around the second shape)
 - Inside (first shape is inside the second shape)
+- Around Every # (duplicate the second shape in a circular pattern 'around' the first shape )
+- Mirror (second shape is duplicated and flipped on the axis specified - i.e. left/right/front/behind)
 
 # Modifiers
 
@@ -80,6 +84,17 @@ If not specified, shapes are assumed to be touching
 - Short    (height\*0.75)
 - Tall     (height\*1.5)
 - Taller   (height\*2.0)
+- Long     (rope-length * 2)
+- Longer   (rope-length * 4)
+- Flipped Horizontally (exchange x)
+- Flipped Vertically (exchange z)
+- Flipped Depth (exchange y)
+- Tapered Up    (narrower at top * .5 )
+- Tapered Down  (narrower at bottom * .5 )
+- Tapered (narrower at top and bottom by .5)
+- Flatten Depth  (depth\*0.1)
+- Flatten Height (height\*0.1)
+- Flatten Width  (width\*0.1) 
 
 # Material Adjectives
 
@@ -87,12 +102,18 @@ Color and texture
 
 - Any well known HTML color (used to shade the shape)
 - Rounded
-- Very Lumpy (Surface texture has deep 'noise')
-- Lumpy (Surface texture has shallow 'noise')
+- Finer (features are closest together * .25)
+- Fine  (features are closest together * .5)
+- Coarse (features are farther apart * 2)
+- Coarse (features are farther apart * 4)
+- Lumpy (Surface texture has lumps)
 - Vertical Bars (bars up & down)
 - Horizontal Bars (bars across)
 - Vertical Rings
 - Horizontal Rings
+- Prickly (has 'spines')
+- Random (variable)
+- Shrubby (fill 'plant' material)
 - Packed (rings/bars are next to each other)
 - Tighter (rings/bars are x 0.25 apart)
 - Tight (rings/bars are x 0.5 apart)
