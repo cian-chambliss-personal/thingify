@@ -19,7 +19,7 @@ SOFTWARE.
 */
 const reservedWords = [
     ["sphere", "shape"],
-    ["cube", "shape"],
+    ["box", "shape"],
     ["cone", "shape"],
     ["toroid", "shape"],
     ["cylinder", "shape"],
@@ -45,6 +45,10 @@ const reservedWords = [
     ["below", "prep", ["corners"], "below-corners"],
     ["above", "prep", ["edges"], "above-edges"],
     ["below", "prep", ["edges"], "below-edges"],
+    ["above", "prep", ["back","edge"] , "above-back-edge"],
+    ["above", "prep", ["front","edge"] , "above-front-edge"],
+    ["above", "prep", ["left","edge"] , "above-left-edge"],
+    ["above", "prep", ["right","edge"] , "above-right-edge"],
     ["below", "prep"],
     ["above", "prep"],
     ["behind", "prep"],
@@ -275,6 +279,9 @@ const parseShapes = function (def) {
                         if (type === "shape") {
                             primitive = word;
                         } else if (type === "prep") {
+                            if( reservedWords[index][3] ) {
+                                word = reservedWords[index][3];
+                            }
                             prep = word;
                         } else if (type === "color") {
                             color = word;
