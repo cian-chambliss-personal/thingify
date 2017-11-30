@@ -19,6 +19,12 @@ pinetree = [
       lumpy brown thinner by 2 cylinder below
    )
 ]
+```
+![./pine_tree.png](./pine_tree.png)
+
+Define a chair as a series of cubes with scaling.
+
+```
 chair = [
   brown shorter by 10 cube (
     thinner by 10 cube below corners
@@ -26,6 +32,7 @@ chair = [
  )
 ]
 ```
+![./chair.png](./chair.png)
 
 # Primatives
 
