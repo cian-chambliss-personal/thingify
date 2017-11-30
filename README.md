@@ -1,8 +1,8 @@
 # Thingify
 
-An abstract language to describe physical objects.  The purpose is use in a context where only text is available to describe a configration of shapes.
+An abstract language to describe physical objects.  The purpose is use in a context where only text is available to describe a configuration of shapes.
 
-This language has a base set of primative shapes (nouns), and preposition (above / under), adjectives (smaller , larger, green).  Definitions can be used inside other definitions once defined.
+This language has a base set of primitive shapes (nouns), and preposition (above / under), adjectives (smaller , larger, green).  Definitions can be used inside other definitions once defined.
 
 The language defines 'types' as a name, followed by an '=', followed by a definition enclosed in square brackets '[]'.
 
@@ -36,7 +36,7 @@ chair = [
 
 # Primatives
 
-- Null (shape) -- the shape is not visible / it is used for arrangoing other items.
+- Null (shape) -- the shape is not visible / it is used for arranging other items.
 - Sphere
 - \# sided Sphere (# of sides - i.e. 4 sided sphere - four sections around )
 - Cube
@@ -53,8 +53,8 @@ chair = [
 
 If not specified, shapes are assumed to be touching
 
-- Above  (child is centered on and 'above' the parentt shape)
-- Below  (chile is center on and 'below' the parentt shape)
+- Above  (child is centered on and 'above' the parent shape)
+- Below  (chile is center on and 'below' the parent shape)
 - Above Corners (repeat child above 'top' corners of parent shape)
 - Below Corners (repeat child below 'bottom' corners of parent shape)
 - At Corners (repeat child at every corner)
@@ -159,12 +159,3 @@ Color and texture
 - Rusty (i.e. generative metal rust)
 - Dirty (Add 'dirt' or 'dust')
 - Rivets (edges have riveting)
-
-
-
-
-
-
-
-
-
